@@ -1,1 +1,74 @@
-100
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百日百页面</title>
+	<style>
+	/*common.css*/
+		*{box-sizing:border-box;margin: 0;/*border: 1px solid red;*/}
+		body{font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;margin: 0;}
+		.clearfix:before,.clearfix:after{display: table;content: "";}
+		.clearfix:after{clear: both;}
+		.clearfix{zoom: 1;}
+		ul{list-style: none;padding: 0;margin: 0;}
+		a{text-decoration: none;}
+		
+		.hero{background-color: lightseagreen;}
+		.hero h1{
+			color: #fff;
+			line-height: 160px;
+			text-align: center;}
+		
+		.toc li{
+			width: 900px;
+			margin: 20px auto;}
+		.toc li a{
+			display: block; 
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+		    transition: all 1s ease;
+		    color: #212121;}
+		.toc li a:hover{
+			box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+		}
+		.toc .id{float: left;
+			height: 96px;
+			line-height: 96px;
+			color:#fff;
+			background-color: lightseagreen;
+			text-align: center;
+			width: 170px;}
+		.toc .detail{
+			float: left;
+			height: 96px;
+			padding-left: 10px;}
+		.toc .detail .title{
+			line-height:46px;
+			font-size:20px;}
+		.toc .detail .data{
+			opacity: 0.8;
+		}
+
+		footer{height: 100px;
+			background-color: lightseagreen;
+			margin-top: 80px;}
+	</style>
+</head>
+<body>
+	<div class="hero clearfix">
+		<h1>百日百页面</h1>
+	</div>
+	<ul class="toc">
+		<li>
+			<a href="1.html" class="clearfix" >
+				<div class="id">1</div>
+				<div class="detail">
+					<div class="title">好看的背景颜色</div>
+					<div class="data">2016年1月7日</div>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<footer></footer>
+</body>
+</html>
+
